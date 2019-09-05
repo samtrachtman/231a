@@ -1,0 +1,74 @@
+%Thanks to Ryan Hubert for creating this template.
+
+\documentclass[11pt, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+	\geometry{letterpaper}
+\usepackage{setspace}
+\usepackage{fullpage}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{hyperref}
+\usepackage{url}
+
+\usepackage{amssymb}
+\usepackage{amsmath,mathtools}
+\usepackage{amsthm}
+\usepackage[nameinlink,noabbrev]{cleveref}
+	\newtheorem{lemma}{Lemma}
+	\newtheorem{corollary}{Corollary}
+	\newtheorem{proposition}{Proposition}
+	\newtheorem{assumption}{Assumption}
+	\newtheorem{defn}{Definition}
+	\theoremstyle{remark}	
+	\newtheorem{claim-unproved}{Claim}
+	\newtheorem{conj}{Conjecture}
+	\makeatletter
+		\def\thm@space@setup{\thm@preskip=\parskip \thm@postskip=0pt}
+	\makeatother	
+
+\begin{document}
+
+\begin{center}
+\textbf{Solutions for Problem Set [\#]}\\
+Student Name\\
+Group Members:  ... \\
+Date
+\end{center}
+
+\section*{Question 1}
+
+\begin{proposition}\label{q1} This is your formal statement.
+\end{proposition}
+
+\begin{proof} This is your proof for \Cref{q1}.
+\end{proof}
+
+% If you want to include figures, use something like this:
+% ======================================
+%\begin{figure}[H]
+%\begin{center}
+%\includegraphics[width=3in]{FILENAME.pdf}
+%\caption{CAPTION HERE}
+%\end{center}
+%\end{figure}
+
+% If you want to include tables, use something like this:
+% =====================================
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+% & $A$ & $B$ & $C$ \\\hline
+% $X$ & 7,4 & 2,3 & 6,2 \\\hline
+% $Y$ & 2,5 & 1,6 & 5,5 \\\hline
+% $Z$ & 5,5 & 0,3 & 4,4 \\\hline
+%\end{tabular}
+%\end{center}
+
+
+\end{document}
